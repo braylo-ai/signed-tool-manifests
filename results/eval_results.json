@@ -1,0 +1,81 @@
+{
+  "attacks_refused": "11/11",
+  "attacks": [
+    {
+      "attack": "tampered description in transit",
+      "refused": true,
+      "code": "tampered"
+    },
+    {
+      "attack": "tampered schema in transit",
+      "refused": true,
+      "code": "tampered"
+    },
+    {
+      "attack": "tampered manifest body",
+      "refused": true,
+      "code": "bad_signature"
+    },
+    {
+      "attack": "unsigned manifest",
+      "refused": true,
+      "code": "unsigned"
+    },
+    {
+      "attack": "signed by untrusted key",
+      "refused": true,
+      "code": "unknown_key"
+    },
+    {
+      "attack": "signed by revoked key",
+      "refused": true,
+      "code": "revoked_key"
+    },
+    {
+      "attack": "expired manifest",
+      "refused": true,
+      "code": "expired"
+    },
+    {
+      "attack": "replay of older manifest",
+      "refused": true,
+      "code": "rollback"
+    },
+    {
+      "attack": "tool version downgrade",
+      "refused": true,
+      "code": "downgrade"
+    },
+    {
+      "attack": "schema drift (wrong version served)",
+      "refused": true,
+      "code": "schema_drift"
+    },
+    {
+      "attack": "tool not in any manifest",
+      "refused": true,
+      "code": "unsigned_tool"
+    }
+  ],
+  "control_refused": false,
+  "context_size": [
+    {
+      "tools": 10,
+      "eager_bytes": 4460,
+      "deferred_catalog_bytes": 1160,
+      "reduction": 0.74
+    },
+    {
+      "tools": 50,
+      "eager_bytes": 22380,
+      "deferred_catalog_bytes": 5840,
+      "reduction": 0.739
+    },
+    {
+      "tools": 200,
+      "eager_bytes": 89780,
+      "deferred_catalog_bytes": 23390,
+      "reduction": 0.739
+    }
+  ]
+}
